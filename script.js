@@ -1,4 +1,6 @@
-// Task 1 prompts
+/* ====================
+    Task 1 prompts
+==================== */
 
 const taskOneTitle = prompt("Enter task 1 title:");
 const taskOneDescription = prompt("Enter task 1 description:");
@@ -19,13 +21,16 @@ while (taskOneStatusValidity === false) {
     }
 }
 
-// Task 2 prompts
+/* ====================
+    Task 2 prompts
+==================== */
+
 const taskTwoTitle = prompt("Enter task 2 title:");
 const taskTwoDescription = prompt("Enter task 2 description:");
 let taskTwoStatus;
 
 /*
-    Loop prompt until task 2 status is valid.
+    Loop prompt until task 2 status is valid
     Similar to task 1 code
 */
 
@@ -39,7 +44,9 @@ while (taskTwoStatusValidity === false) {
     }
 }
 
-// Display completed tasks
+/* ====================
+    Display completed tasks
+==================== */
 
 if (taskOneStatus === "done") {
     console.log(`Title: ${taskOneTitle}, status: ${taskOneStatus}`);
@@ -49,7 +56,10 @@ if (taskTwoStatus === "done") {
     console.log(`Title: ${taskTwoTitle}, status: ${taskTwoStatus}`);
 }
 
-// Display if no tasks completed
+
+/* ====================
+    Display if no tasks completed
+==================== */
 
 if (taskOneStatus !== "done" && taskTwoStatus !== "done") {
     console.log("No tasks completed, let's get to work!");
