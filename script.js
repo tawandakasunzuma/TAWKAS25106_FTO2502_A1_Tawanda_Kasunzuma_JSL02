@@ -2,15 +2,15 @@
     Task 1 prompts
 ==================== */
 
-const taskOneTitle = prompt("Enter task 1 title:");
-const taskOneDescription = prompt("Enter task 1 description:");
+const taskOneTitle = prompt("Enter task 1 title:").trim();
+const taskOneDescription = prompt("Enter task 1 description:").trim();
 let taskOneStatus;
 
 // Loop prompt until task 1 status is valid
 
 let taskOneStatusValidity = false;
 while (taskOneStatusValidity === false) {
-    taskOneStatus = prompt("Enter task 1 status:").toLowerCase();
+    taskOneStatus = prompt("Enter task 1 status:").trim().toLowerCase();
     // Check validity of status
     if (taskOneStatus === "todo" || taskOneStatus === "doing" || taskOneStatus === "done") {
         // Change task validity status
@@ -25,8 +25,8 @@ while (taskOneStatusValidity === false) {
     Task 2 prompts
 ==================== */
 
-const taskTwoTitle = prompt("Enter task 2 title:");
-const taskTwoDescription = prompt("Enter task 2 description:");
+const taskTwoTitle = prompt("Enter task 2 title:").trim();
+const taskTwoDescription = prompt("Enter task 2 description:").trim();
 let taskTwoStatus;
 
 /*
@@ -36,7 +36,7 @@ let taskTwoStatus;
 
 let taskTwoStatusValidity = false;
 while (taskTwoStatusValidity === false) {
-    taskTwoStatus = prompt("Enter task 2 status:").toLowerCase();
+    taskTwoStatus = prompt("Enter task 2 status:").trim().toLowerCase();
     if (taskTwoStatus === "todo" || taskTwoStatus === "doing" || taskTwoStatus === "done") {
         taskTwoStatusValidity = true;
     } else {
@@ -49,11 +49,11 @@ while (taskTwoStatusValidity === false) {
 ==================== */
 
 if (taskOneStatus === "done") {
-    console.log(`Title: ${taskOneTitle}, status: ${taskOneStatus}`);
+    console.log(`Title: ${taskOneTitle}, Status: ${taskOneStatus}`);
 }
 
 if (taskTwoStatus === "done") {
-    console.log(`Title: ${taskTwoTitle}, status: ${taskTwoStatus}`);
+    console.log(`Title: ${taskTwoTitle}, Status: ${taskTwoStatus}`);
 }
 
 
