@@ -45,7 +45,7 @@ while (taskTwoStatusValidity === false) {
 }
 
 /* ====================
-    Display completed tasks
+    Display - completed tasks
 ==================== */
 
 if (taskOneStatus === "done") {
@@ -56,9 +56,8 @@ if (taskTwoStatus === "done") {
     console.log(`Title: ${taskTwoTitle}, Status: ${taskTwoStatus}`);
 }
 
-
 /* ====================
-    Display if no tasks completed
+    Display - if no tasks completed
 ==================== */
 
 if (taskOneStatus !== "done" && taskTwoStatus !== "done") {
